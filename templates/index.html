@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- The above 4 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <!-- Title -->
+    <title>Genesis - Leaf Disease Detection &amp; Landscaping HTML Template</title>
+
+    <!-- Favicon -->
+    <link rel="icon" href="static/img/core-img/favicon.ico">
+
+    <!-- Core Stylesheet -->
+    <link rel="stylesheet" href="static/style.css">
+    <style>
+    .filterDiv {
+      float: left;        
+      /*background-color: darkgreen;*/
+      background: url(static/img/bg-img/leaf7.jpg);
+      background-repeat: no-repeat;
+      background-size: 300px 250px;
+      color: white;
+      width: 300px;
+      font-size: 30px;
+      font-weight: 700;
+      line-height: 300px;
+      text-align: center;
+      margin: 5px;
+      display: none;
+    }
+
+    .show {
+      display: block;
+    }
+
+    .container {
+      margin-top: 20px;
+      overflow: hidden;
+    }
+    
+
+    /* Style the buttons */
+    .btn1 {
+      border: none;
+      outline: none;
+      padding: 12px 16px;
+      /*background-color: #f1f1f1;*/
+      background: url('static/img/bg-img/leaf6_1.jpg');
+      background-size: 150px 80px;
+      background-repeat: no-repeat;
+      cursor: pointer;
+        border-radius: 10px;
+        font-family: 'Pacifico', cursive;
+        font-size: 25px; 
+        color: #fff;
+        text-decoration: none; 
+        background-color: #000000;
+        border-bottom: 5px solid #000000;
+        text-shadow: 0px -2px #000;
+    }
+
+    .btn1:hover {
+      /*background-color: #228B22	 ;*/
+        opacity: 0.5;
+    }
+
+
+    .btn1:focus {
+      background: url('static/img/bg-img/leaf7.jpg');
+      background-size: 150px 80px;
+      background-repeat: no-repeat;
+      color: #fff;
+        }
+        
+    .btn1 active{
+      background: url('static/img/bg-img/leaf7.jpg');
+      background-size: 150px 80px;
+      background-repeat: no-repeat;
+      color: #fff;    
+        }
+        
+     .img-preview {
+    width: 256px;
+    height: 256px;
+    position: relative;
+    border: 5px solid #F8F8F8;
+    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 1em;
+    margin-bottom: 1em;    
+}
+
+    .img-preview>div {
+        width: 100%;
+        height: 100%;
+        background-size: 256px 256px;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    input[type="file"] {
+        display: none;
+    }
+
+    .upload-label{
+        display: inline-block;
+        padding: 12px 30px;
+        background: #34a021;
+        color: #fff;
+        font-size: 1em;
+        transition: all .4s;
+        cursor: pointer;
+    }
+
+    .upload-label:hover{
+        background: #34495E;
+        color: #39D2B4;
+    }
+
+    .loader {
+        border: 8px solid #f3f3f3; /* Light grey */
+        border-top: 8px solid #3498db; /* Blue */
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        animation: spin 1s linear infinite;
+    }
+    </style>
+
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div class="preloader d-flex align-items-center justify-content-center">
+        <div class="preloader-circle"></div>
+        <div class="preloader-img">
+            <img src="static/img/core-img/leaf.png" alt="">
+        </div>
+    </div>
+
+    <!-- ##### Header Area Start ##### -->
+    <header class="header-area">
+
+        <!-- ***** Top Header Area ***** -->
+        <div class="top-header-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="top-header-content d-flex align-items-center justify-content-between">
+                            <!-- Top Header Content -->
+                            <div class="top-header-meta">
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="leafdiseasedetector@gmail.com"><i class="fa fa-envelope-o" aria-hidden="true"></i> <span>Email: leafdiseasedetector@gmail.com</span></a>
+                                <a href="#" data-toggle="tooltip" data-placement="bottom" title="+1 234 122 122"><i class="fa fa-phone" aria-hidden="true"></i> <span>Call Us: +91 22 234 122 122</span></a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ***** Navbar Area ***** -->
+        <div class="alazea-main-menu">
+            <div class="classy-nav-container breakpoint-off">
+                <div class="container">
+                    <!-- Menu -->
+                    <nav class="classy-navbar justify-content-between" id="alazeaNav">
+
+                        <!-- Nav Brand -->
+                        <a href="index.html" class="nav-brand" style="color: white; font-weight: bold; letter-spacing: 2px">GENESIS</a>
+
+                        <!-- Navbar Toggler -->
+                        <div class="classy-navbar-toggler">
+                            <span class="navbarToggler"><span></span><span></span><span></span></span>
+                        </div>
+
+                        <!-- Menu -->
+                        <div class="classy-menu">
+
+                            <!-- Close Button -->
+                            <div class="classycloseIcon">
+                                <div class="cross-wrap"><span class="top"></span><span class="bottom"></span></div>
+                            </div>
+
+                            <!-- Navbar Start -->
+                            <div class="classynav">
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="static/about.html">About</a></li>
+                                    <li><a href="static/disease.html">Diseases</a></li>                    
+                                    <li><a href="static/contact.html">Contact</a></li>
+                                </ul>
+
+                                <!-- Search Icon -->
+                                <div id="searchIcon">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </div>
+
+                            </div>
+                            <!-- Navbar End -->
+                        </div>
+                    </nav>
+
+                    <!-- Search Form -->
+                    <div class="search-form">
+                        <form action="#" method="get">
+                            <input type="search" name="search" id="search" placeholder="Type keywords &amp; press enter...">
+                            <button type="submit" class="d-none"></button>
+                        </form>
+                        <!-- Close Icon -->
+                        <div class="closeIcon"><i class="fa fa-times" aria-hidden="true"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ##### Header Area End ##### -->
+
+    <!-- ##### Hero Area Start ##### -->
+    <section class="hero-area">
+        <div class="hero-post-slides owl-carousel">
+
+            <!-- Single Hero Post -->
+            <div class="single-hero-post bg-overlay">
+                <!-- Post Image -->
+                <div class="slide-img bg-img" style="background-image: url(static/img/bg-img/test2.jpg);"></div>
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <!-- Post Content -->
+                            <div class="hero-slides-content text-center">
+                                <h2>Leaf Disease Detector</h2>
+                                <p style="letter-spacing: 2px">Healthy Plants, Healthy People</p>
+                                <div class="welcome-btn-group">
+                                    <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
+                                    <a href="static/contact.html" class="btn alazea-btn active">CONTACT US</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Single Hero Post -->
+            <div class="single-hero-post bg-overlay">
+                <!-- Post Image -->
+                <div class="slide-img bg-img" style="background-image: url(static/img/bg-img/test3.jpg);"></div>
+                <div class="container h-100">
+                    <div class="row h-100 align-items-center">
+                        <div class="col-12">
+                            <!-- Post Content -->
+                            <div class="hero-slides-content text-center">
+                                <h2>Leaf Disease Detector</h2>
+                                <p style="letter-spacing: 2px">Healthy Plants, Healthy People</p>
+                                <div class="welcome-btn-group">
+                                    <a href="#" class="btn alazea-btn mr-30">GET STARTED</a>
+                                    <a href="static/contact.html" class="btn alazea-btn active">CONTACT US</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- ##### Hero Area End ##### -->
+
+    <!-- ##### About us Area Start ##### -->
+    <section class="our-services-area bg-gray section-padding-100-0">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2>GENESIS</h2>
+                        <p>We provide the perfect service for you.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-5">
+                    <div class="alazea-service-area mb-100">
+
+                        <!-- Single Service Area -->
+                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="100ms">
+                        <!-- Content -->
+                        <div class="service-content">
+                            <!--<h5>Plants Care</h5>-->
+                            <p>India is an agricultural country where in about 70% of the population depends on agriculture. Farmers have wide range of diversity to select suitable Fruit and Vegetable crops. A large section of their income is generated by horticulture and vegetable farming. Agricultural production mainly depends on the quality of seed, soil etc. In order to obtain more valuable products, a product quality control is basically mandatory. The quality of agricultural products may be reduced due to leaf diseases.The classical approach for detection and identification of leaf diseases is based on the naked eye observation by the experts. In some developing countries, consulting experts are expensive and time consuming due to the distant locations of their availability. Automatic detection of leaf diseases is essential to automatically detect the symptoms of diseases as early as they appear on the growing fruits. </p>
+                        </div>
+                        </div>
+
+                        <!-- Single Service Area -->
+                        <div class="single-service-area d-flex align-items-center wow fadeInUp" data-wow-delay="500ms">
+
+                            <!-- Content -->
+                            <div class="service-content">
+                                <!--<h5>Tree Service &amp; Trimming</h5>-->
+                                <p>Our applications provides one such approach where the farmers could easily upload the images of the leaves of the plants and our application will help them to diagnose the disease in the plant. Further they can also browse to respective disease page to know more about its counter and preventive measures.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <video width="520" height="340" controls>
+                        <source src="static/img/123.mp4" type="video/mp4">
+                        <source src="static/img/123.mp4" type="video/ogg">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### About us Area End ##### -->
+
+    <!-- ##### Disease Detector Area Start ##### -->
+    <section class="about-us-area section-padding-100-0">
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-12">
+                    <!-- Section Heading -->
+                    <div class="section-heading text-center">
+                        <h2>Disease Detector</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between">
+                <div class="col-12 col-lg-4">
+                    <p>Upload Your Image Below:</p>
+                    <form id="upload-file" method="post" enctype="multipart/form-data">
+                    <label for="imageUpload" class="upload-label">
+                        Choose...
+                    </label>
+                    <input type="file" name="file" id="imageUpload" accept=".png, .jpg, .jpeg">
+                </form>
+                </div>
+                <div class="col-12 col-lg-4">     
+                <p>Your Uploaded File</p>    
+                <div class="image-section" style="display:none;">
+                    <div class="img-preview">
+                        <div id="imagePreview">
+                        </div>
+                    </div>
+                    <div>
+                        <button type="button" class="btn btn-primary btn-lg " id="btn-predict">Predict!</button>
+                    </div>
+                </div>
+                </div>
+                <div class="col-12 col-lg-4">
+                    <p>Result</p>
+                    <div class="loader" style="display:none;"></div>
+                    <h3 id="result">
+                        <span> </span>
+                    </h3>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="border-line"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Diseases Detector Area End ##### -->
+    <br><br>
+    
+    <!-- ##### Disease Area Start ##### -->
+    <center>
+    <h2>DISEASES</h2><br>
+
+    <div id="myBtnContainer">
+      <button class="btn1 active" onclick="filterSelection('Apple')"> Apple</button>
+      <button class="btn1" onclick="filterSelection('Corn')"> Corn</button>
+      <button class="btn1" onclick="filterSelection('Grape')"> Grape</button>
+      <button class="btn1" onclick="filterSelection('Potato')"> Potato</button>
+      <button class="btn1" onclick="filterSelection('Tomato')"> Tomato</button>
+    </div>
+    <center>
+    <div class="container">
+        <a href="static/apple_scab.html"><div class="filterDiv Apple">Apple Scab</div></a>
+        <a href="static/apple_cedar.html"><div class="filterDiv Apple">Cedar Apple Rust</div></a>
+        <a href="static/apple_blackrot.html"><div class="filterDiv Apple">Black Rot</div></a>
+        <a href="static/corn_cercospora.html"><div class="filterDiv Corn">Cercospora leaf spot</div></a>
+        <a href="static/corn_rust.html"><div class="filterDiv Corn">Common Rust</div></a>
+        <a href="static/corn_blight.html"><div class="filterDiv Corn">Northern Leaf Blight</div></a>
+        <a href="static/grape_blackrot.html"><div class="filterDiv Grape">Black Rot</div></a>
+        <a href="static/grape_esca.html"><div class="filterDiv Grape">Esca (Black Measles)</div></a>
+        <a href="static/grape_blight.html"><div class="filterDiv Grape">Leaf blight</div></a>
+        <a href="static/tomato_bacterialSpot.html"><div class="filterDiv Tomato">Bacterial Spot</div></a>
+        <a href="static/tomato_earlyBlight.html"><div class="filterDiv Tomato">Early Blight</div></a>
+        <a href="static/tomato_lateBlight.html"><div class="filterDiv Tomato">Late Blight</div></a>
+        <a href="static/tomato_leafMold.html"><div class="filterDiv Tomato">Leaf Mold</div></a>
+        <a href="static/tomato_Septoria.html"><div class="filterDiv Tomato">Septoria Leaf Spot</div></a>
+        <a href="static/tomato_spiderMites.html"><div class="filterDiv Tomato">Spider Mites</div></a>
+        <a href="static/tomato_targetSpot.html"><div class="filterDiv Tomato">Target Spot</div></a>
+        <a href="static/tomato_MosiacVirus.html"><div class="filterDiv Tomato">Mosiac Virus</div></a>
+        <a href="static/tomato_yellowLeafCurl.html"><div class="filterDiv Tomato">Yellow Leaf Curl Virus</div></a>
+        <a href="static/potato_leafBlight.html"><div class="filterDiv Potato">Late blight</div></a>
+        <a href="static/potato_earlyBlight.html"><div class="filterDiv Potato">Early blight</div></a>  
+    </div>
+    </center>
+    <script>
+    filterSelection("Apple")
+    function filterSelection(c) {
+      var x, i;
+      x = document.getElementsByClassName("filterDiv");
+      if (c == "all") c = "";
+      for (i = 0; i < x.length; i++) {
+        w3RemoveClass(x[i], "show");
+        if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+      }
+    }
+
+    function w3AddClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+      }
+    }
+
+    function w3RemoveClass(element, name) {
+      var i, arr1, arr2;
+      arr1 = element.className.split(" ");
+      arr2 = name.split(" ");
+      for (i = 0; i < arr2.length; i++) {
+        while (arr1.indexOf(arr2[i]) > -1) {
+          arr1.splice(arr1.indexOf(arr2[i]), 1);     
+        }
+      }
+      element.className = arr1.join(" ");
+    }
+
+    // Add active class to the current button (highlight it)
+    var btnContainer = document.getElementById("myBtnContainer");
+    var btns = btnContainer.getElementsByClassName("btn");
+    for (var i = 0; i < btns.length; i++) {
+      btns[i].addEventListener("click", function(){
+        var current = document.getElementsByClassName("active");
+        current[0].className = current[0].className.replace(" active", "");
+        this.className += " active";
+      });
+    }
+    </script>
+    </center>
+  <!-- ##### Disease Area ENd ##### -->
+
+    <br><br>
+    <!-- ##### Subscribe Area Start ##### -->
+    <section class="subscribe-newsletter-area" style="background-image: url(static/img/bg-img/subscribe.png);">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-5">
+                    <!-- Section Heading -->
+                    <div class="section-heading mb-0">
+                        <h2>Join the Newsletter</h2>
+                        <p>Subscribe to our newsletter and get 10% off your first purchase</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6">
+                    <div class="subscribe-form">
+                        <form action="#" method="get">
+                            <input type="email" name="subscribe-email" id="subscribeEmail" placeholder="Enter your email">
+                            <button type="submit" class="btn alazea-btn">SUBSCRIBE</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Subscribe Side Thumbnail -->
+        <div class="subscribe-side-thumb wow fadeInUp" data-wow-delay="500ms">
+            <img class="first-img" src="static/img/core-img/leaf.png" alt="">
+        </div>
+    </section>
+    <!-- ##### Subscribe Area End ##### -->
+
+    <!-- ##### Contact Area Start ##### -->
+    <section class="contact-area section-padding-100-0">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+                <div class="col-12 col-lg-5">
+                    <!-- Section Heading -->
+                    <div class="section-heading">
+                        <h2>GET IN TOUCH</h2>
+                        <p>Send us a message, we will call back later</p>
+                    </div>
+                    <!-- Contact Form Area -->
+                    <div class="contact-form-area mb-100">
+                        <form action="#" method="post">
+                            <div class="row">
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="contact-name" placeholder="Your Name">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-sm-6">
+                                    <div class="form-group">
+                                        <input type="email" class="form-control" id="contact-email" placeholder="Your Email">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" id="contact-subject" placeholder="Subject">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                        <textarea class="form-control" name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <button type="submit" class="btn alazea-btn mt-15">Send Message</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6">
+                    <!-- Google Maps -->
+                    <div class="map-area mb-100">
+                        <iframe width="600" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=vile%20parle&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ##### Contact Area End ##### -->
+
+    <!-- ##### Footer Area Start ##### -->
+    <footer class="footer-area bg-img" style="background-image: url(static/img/bg-img/3.jpg);">
+        <!-- Main Footer Area -->
+        <div class="main-footer-area">
+            <div class="container">
+                <div class="row">
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="footer-logo mb-30">
+                                <a href="" style="color: white; font-weight: bold; letter-spacing: 2px; font-size: 30px">GENESIS</a>
+                            </div>
+                            <p>Healthy Plants , Healthy People</p>
+                            <div class="social-info">
+                                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                    </div>
+
+                    <!-- Single Footer Widget -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="single-footer-widget">
+                            <div class="widget-title">
+                                <h5>CONTACT</h5>
+                            </div>
+
+                            <div class="contact-information">
+                                <p><span>Address:</span> Vile Parle, Mumbai, Maharashtra 400056</p>
+                                <p><span>Phone:</span> +1 234 122 122</p>
+                                <p><span>Email:</span> leafdiseasedetector@gmail.com</p>
+                                <p><span>Open hours:</span> Mon - Sun: 8 AM to 9 PM</p>
+                                <p><span>Happy hours:</span> Sat: 2 PM to 4 PM</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer Bottom Area -->
+        <div class="footer-bottom-area">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="border-line"></div>
+                    </div>
+                    <!-- Copywrite Text -->
+                    <div class="col-12 col-md-6">
+                        <div class="copywrite-text">
+                            <p>&copy; <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved 
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+</p>
+                        </div>
+                    </div>
+                    <!-- Footer Nav -->
+                    <div class="col-12 col-md-6">
+                        <div class="footer-nav">
+                            <nav>
+                                <ul>
+                                    <li><a href="index.html">Home</a></li>
+                                    <li><a href="static/about.html">About</a></li>
+                                    <li><a href="static/disease.html">Diseases</a></li>
+                                    <li><a href="static/contact.html">Contact</a></li>
+                                </ul>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- ##### Footer Area End ##### -->
+
+    <!-- ##### All Javascript Files ##### -->
+    <!-- jQuery-2.2.4 js -->
+    <script src="static/js/jquery/jquery-2.2.4.min.js"></script>
+    <!-- Popper js -->
+    <script src="static/js/bootstrap/popper.min.js"></script>
+    <!-- Bootstrap js -->
+    <script src="static/js/bootstrap/bootstrap.min.js"></script>
+    <!-- All Plugins js -->
+    <script src="static/js/plugins/plugins.js"></script>
+    <!-- Active js -->
+    <script src="static/js/active.js"></script>
+    <script src="{{ url_for('static', filename='js/main.js') }}" type="text/javascript"></script>
+</body>
+
+</html>
