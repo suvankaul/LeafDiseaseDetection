@@ -1,8 +1,7 @@
-Werkzeug
+Python Modules:
 Flask
 numpy
 Keras
-gevent
 pillow
-h5py
 tensorflow
+opencv
